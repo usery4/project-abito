@@ -29,10 +29,15 @@ body{
 }
 
 .header {
+
+}
+.container {
 	max-width: 1146px;
 	height: 36px;
-	margin: 30px 147px 0 147px;
+	margin: 30px auto;
+
 }
+
 .logo {
 	margin-top: 5px;
 }
@@ -102,11 +107,13 @@ body{
 	color: white;
 }
 
-@media only screen and (max-width: 970px) {
-.header {
+@media only screen and (max-width: 1400px) {
+.container {
 	flex-direction: column;
+	margin: 30px 147px;
 }
 .search_input {
 	max-width: 1036px;
 }
 }
+
