@@ -8,7 +8,7 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a,a:visited{text-decoration: none;}
+a{text-decoration: none;color: inherit;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 body{
- 	font-family: Roboto, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -33,7 +33,7 @@ body{
 }
 .container {
 	max-width: 1146px;
-	height: 36px;
+	height: auto;
 	margin: 30px auto;
 
 }
@@ -45,6 +45,15 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 24px;
+}
+
+.main {
+	display: grid;
+	grid-template: 1fr /2fr;
+	margin: 30px auto 68px auto;
+	max-width: 1146px;
+	grid-template-columns: 852px 261px;
+	column-gap: 30px;
 }
 
 .menu{
@@ -110,10 +119,124 @@ body{
 @media only screen and (max-width: 1400px) {
 .container {
 	flex-direction: column;
-	margin: 30px 147px;
+	margin: 30px auto;
 }
 .search_input {
 	max-width: 1036px;
 }
+
 }
 
+/* main */
+
+
+.main__container {
+
+}
+
+.content__products {
+}
+
+.products {
+
+}
+
+.products__title {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+ 	font-family: Roboto, sans-serif;
+	margin-bottom: 25px;
+}
+
+.products__items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 30px ;
+	grid-row-gap: 20px;
+}
+.products__item {
+	display: grid;
+	grid-auto-flow: row;
+}
+.products__image {
+	max-width: 264px;
+	height: 178px;
+}
+
+.products__name {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #256EEB;
+}
+
+.products__price {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #0A143A;
+}
+
+.products__place {
+	color: #C4C4C4;
+}
+
+.products__time {
+	color: #C4C4C4;
+}
+
+/* sidebar */
+.sidebar {
+}
+
+.sidebar__title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	color: #0A143A;
+	margin-top: 10px;
+}
+
+.sidebar__list {
+	width: 231px;
+	height: 376px;
+	margin-top: 20px;
+}
+
+.sidebar__link {
+	width: 231px;
+	height: 106px;
+	margin-bottom: 25px 0;
+}
+.sidebar__name {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	color: #0A143A;
+}
+.about_us {
+
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+.about {
+	margin-top: 7px;
+}
+
+.end {
+	color: #C4C4C4;
+	margin-bottom: 2px;
+}
+hr {
+	border: 0.01px solid #C4C4C4;
+	margin: 20px 0;
+}
+
+
+@media (max-width 1200px) {
+
+}
